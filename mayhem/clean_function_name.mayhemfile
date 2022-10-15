@@ -2,4 +2,4 @@ project: puffin
 target: clean-function-name
 
 cmds:
-  - cmd: /fuzzers/clean_function_name
+  - cmd: /fuzzers/fuzz_clean_function_name

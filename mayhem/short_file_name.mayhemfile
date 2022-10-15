@@ -2,4 +2,4 @@ project: puffin
 target: short-file-name
 
 cmds:
-  - cmd: /fuzzers/short_file_name
+  - cmd: /fuzzers/fuzz_short_file_name
