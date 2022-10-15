@@ -1,6 +1,8 @@
 project: puffin
 target: short-file-name
-testsuite: file://mayhem/corpus/short-file-name
+
+testsuite:
+  - file://mayhem/corpus/short-file-name
 
 cmds:
   - cmd: /fuzzers/fuzz_short_file_name

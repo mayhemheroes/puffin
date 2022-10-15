@@ -1,6 +1,8 @@
 project: puffin
 target: clean-function-name
-testsuite: file://mayhem/corpus/clean-function-name
+
+testsuite: 
+  - file://mayhem/corpus/clean-function-name
 
 cmds:
   - cmd: /fuzzers/fuzz_clean_function_name
