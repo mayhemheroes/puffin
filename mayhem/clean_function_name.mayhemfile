@@ -3,3 +3,4 @@ target: clean-function-name
 
 cmds:
   - cmd: /fuzzers/fuzz_clean_function_name
+    testsuite: file:://mayhem/corpus/clean-function-name
