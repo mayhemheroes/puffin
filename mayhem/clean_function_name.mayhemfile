@@ -1,0 +1,5 @@
+project: puffin
+target: clean-function-name
+
+cmds:
+  - cmd: /fuzzers/clean_function_name
