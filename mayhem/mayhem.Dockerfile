@@ -10,4 +10,4 @@ RUN cd puffin/fuzz && cargo fuzz build
 
 # Package Stage
 FROM ubuntu:latest
-COPY --from=builder src/puffin/fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_* /fuzzers/
+COPY --from=builder /src/puffin/fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_* /fuzzers/
