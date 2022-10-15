@@ -17,17 +17,17 @@ path = ".."
 [workspace]
 members = ["."]
 
-# [[bin]]
-# name = "fuzz_clean_function_name"
-# path = "fuzz_targets/clean_function_name.rs"
-# test = false
-# doc = false
-# 
-# [[bin]]
-# name = "fuzz_short_file_name"
-# path = "fuzz_targets/short_file_name.rs"
-# test = false
-# doc = false
+[[bin]]
+name = "fuzz_clean_function_name"
+path = "fuzz_targets/clean_function_name.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_short_file_name"
+path = "fuzz_targets/short_file_name.rs"
+test = false
+doc = false
 
 [[bin]]
 name = "fuzz_parse_stream"
