@@ -1,5 +1,5 @@
 [package]
-name = "postcss-rss-fuzz"
+name = "puffin-fuzz"
 version = "0.0.0"
 authors = ["Automatically generated"]
 publish = false
@@ -17,14 +17,20 @@ path = ".."
 [workspace]
 members = ["."]
 
-[[bin]]
-name = "fuzz_clean_function_name"
-path = "fuzz_targets/clean_function_name.rs"
-test = false
-doc = false
+# [[bin]]
+# name = "fuzz_clean_function_name"
+# path = "fuzz_targets/clean_function_name.rs"
+# test = false
+# doc = false
+# 
+# [[bin]]
+# name = "fuzz_short_file_name"
+# path = "fuzz_targets/short_file_name.rs"
+# test = false
+# doc = false
 
 [[bin]]
-name = "fuzz_short_file_name"
-path = "fuzz_targets/short_file_name.rs"
+name = "fuzz_parse_stream"
+path = "fuzz_targets/parse_stream.rs"
 test = false
 doc = false

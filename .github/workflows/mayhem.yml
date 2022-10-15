@@ -9,6 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
   CLEAN_FUNCTION_NAME_MAYHEMFILE: mayhem/clean_function_name.mayhemfile
   SHORT_FILE_NAME_MAYHEMFILE: mayhem/short_file_name.mayhemfile
+  PARSE_STREAM_MAYHEMFILE: mayhem/parse_stream.mayhemfile
 
 jobs:
   build:
@@ -47,6 +48,13 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Start analysis for parse_stream
+        uses: ForAllSecure/mcode-action@v1
+        with:
+          mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.PARSE_STREAM_MAYHEMFILE }} --duration 600
+          sarif-output: sarif  
 
       - name: Start analysis for short_file_name
         uses: ForAllSecure/mcode-action@v1
