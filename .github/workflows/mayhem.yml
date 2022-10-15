@@ -52,14 +52,14 @@ jobs:
         uses: ForAllSecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.CLEAN_FUNCTION_NAME_MAYHEMFILE }} --duration 1200
+          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.CLEAN_FUNCTION_NAME_MAYHEMFILE }} --duration 250
           sarif-output: sarif
 
       - name: Start analysis for short_file_name
         uses: ForAllSecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.SHORT_FILE_NAME_MAYHEMFILE }} --duration 1200
+          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.SHORT_FILE_NAME_MAYHEMFILE }} --duration 250
           sarif-output: sarif
 
       - name: Upload SARIF file(s)
