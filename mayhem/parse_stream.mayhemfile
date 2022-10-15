@@ -1,5 +1,5 @@
 project: puffin
-target: short-file-name
+target: parse-stream
 
 cmds:
   - cmd: /fuzzers/fuzz_parse_stream
