@@ -56,17 +56,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e82dad04139b71a90c080c8463fe0dc7902db5192d939bd0950f074d014339e1"
 
 [[package]]
-name = "postcss-rss-fuzz"
-version = "0.0.0"
-dependencies = [
- "libfuzzer-sys",
- "puffin",
-]
-
-[[package]]
 name = "puffin"
 version = "0.13.3"
 dependencies = [
  "byteorder",
  "once_cell",
+]
+
+[[package]]
+name = "puffin-fuzz"
+version = "0.0.0"
+dependencies = [
+ "libfuzzer-sys",
+ "puffin",
 ]
