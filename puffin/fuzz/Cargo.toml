@@ -34,3 +34,9 @@ name = "fuzz_parse_stream"
 path = "fuzz_targets/parse_stream.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "gen_corpus"
+path = "gen_corpus.rs"
+test = false
+doc = false
