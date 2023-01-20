@@ -1,0 +1,8 @@
+project: puffin
+target: parse-stream
+
+testsuite:
+  - file://mayhem/corpus/parse-stream
+
+cmds:
+  - cmd: /fuzzers/fuzz_parse_stream
